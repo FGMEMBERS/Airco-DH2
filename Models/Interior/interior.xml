@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>interior.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>interieur</object-name>
+    <object-name>inttour</object-name>
+    <object-name>rebort</object-name>
+    <object-name>barres</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+<!--
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>intvitres</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>intvitres</object-name>
+  </animation>
+-->
+  <!-- Pilote -->
+  <model>
+    <path>Aircraft/Airco-DH2/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -2.813 </x-m>
+      <y-m>  0.016 </y-m>
+      <z-m> -0.123 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Tableau de bord -->
+  <model>
+    <path>Aircraft/Airco-DH2/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m> -3.400 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.308 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>

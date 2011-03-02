@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <sim include="Nasal/views.xml">
+
+    <author>Emmanuel BARANGER (3D/FDM)</author>
+    <aircraft-version>0.2</aircraft-version>
+    <status>Alpha</status>
+
+    <fuel-fraction>1.0</fuel-fraction>
+
+    <startup>
+      <splash-texture>Aircraft/Airco-DH2/dh2-splash.png</splash-texture>
+    </startup>
+
+    <sound>
+      <path archive="y">Aircraft/Airco-DH2/Sounds/dh2-sound.xml</path>
+    </sound>
+
+    <model>
+      <path archive="y">Aircraft/Airco-DH2/Models/dh2.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model>
+
+    <submodels> 
+      <serviceable type="bool">true</serviceable>
+      <path>Aircraft/Airco-DH2/Models/Effects/guns/submodels.xml</path>
+    </submodels>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic> 
+        <int type="int">0</int>  <!-- 0 immat -->
+        <int type="int">0</int>  <!-- 1 immat -->
+        <int type="int">0</int>  <!-- 2 immat -->
+        <int type="int">0</int>  <!-- 3 immat -->
+        <int type="int">0</int>  <!-- 4 immat -->
+        <int type="int">0</int>  <!-- 5 immat -->
+        <int type="bool">0</int> <!-- 6 smoke -->
+        <int type="int">0</int>  <!-- 7 color -->
+        <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
+        <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
+      </generic>
+    </multiplay>
+
+    <help>
+      <title>AIRCO D.H.2</title>
+      <line>______________________________________________</line>
+    </help>
+
+    <menubar include="Dialogs/dh2-menu.xml"/>
+
+  </sim>
+
+  <controls>
+    <engines>
+      <engine>
+        <mixture archive="y"> 0.65 </mixture>
+      </engine>
+    </engines>
+  </controls> 
+
+  <input>
+    <keyboard include="Nasal/dh2-keyboard.xml"/>
+  </input>
+
+  <nasal>
+    <dh2>
+      <file>Aircraft/Airco-DH2/Nasal/dh2.nas</file>
+      <file>Aircraft/Airco-DH2/Nasal/liveries.nas</file>
+    </dh2>
+    <guns>
+      <file>Aircraft/Airco-DH2/Nasal/weapons.nas</file>
+    </guns>
+  </nasal>
+
+</PropertyList>
+
